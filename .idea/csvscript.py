@@ -5,8 +5,7 @@ from sqlalchemy import create_engine
 import mysql.connector as msql
 from mysql.connector import Error
 import csv
-x = range(1,10000)
-x
+
 covidData = pd.read_csv('https://raw.githubusercontent.com/mdcollab/covidclinicaldata/master/data/10-20_carbonhealth_and_braidhealth.csv', index_col=False)
 #needs delimiter at end of each line so index_col=FALSE
 covidData.head()
